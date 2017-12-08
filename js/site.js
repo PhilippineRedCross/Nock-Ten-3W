@@ -122,7 +122,7 @@
                     .overlayGeoJson(provincesJSON.features, "Province", function (d) {
                         return d.properties.P_Str;
                     })
-                    .projection(d3.geo.mercator().center([123.5,14]).scale(7500))
+                    .projection(d3.geo.mercator().center([123.8,8.1]).scale(7500))
                     .title(function (d) {
                         return "Province: " + pcode2prov[d.key] + " - " + d.value + ' activities';
                     });
